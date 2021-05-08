@@ -1,0 +1,322 @@
+/*
+BootstrapCreative
+Created by: Jacob Lett
+Licensed MIT 
+2019
+
+1 rem    = 16px
+.75 rem  = 12px
+.5 rem   = 8px
+.25 rem  = 4px
+
+Bootstrap 4 breakpoints
+@media (min-width: 576px) { }
+@media (min-width: 768px) { }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) { }
+
+Colors
+#0275d8 - primary blue
+#636c72 - light gray
+#292b2c - black
+*/
+
+
+/*
+####################################################
+G R I D  &  T Y P E
+####################################################
+*/
+body {
+    background: #ffffff;
+}
+#brand-message{
+    background-color: #dc5648;
+}
+
+h1, h2, h3, h4, h5,
+.navbar-brand, blockquote p,
+.display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+section {
+    overflow: hidden;
+}
+.blockquote-footer {margin-top:0.5rem;}
+#footer {
+    background-color: #dc5648;
+    color: #ffffff;
+}
+#footer a,
+#footer a:hover,
+#footer a:active {
+    color: #ccc;
+}
+#footer .nav-link:hover {
+    text-decoration: underline;
+}
+footer .form-control {
+    border:none;
+}
+
+/*
+####################################################
+U T I L I T I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Background utilities
+*/
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* cards have a white background by default and this class helps you make
+them transparent */
+.bg-none {
+    background-color: transparent;
+}
+.text-light a {
+    color:#fff!important;
+}
+.bg-faded-1 {
+    background-color: #c5c8c9;
+}
+.bg-faded-2 {
+    background-color: #93989a;
+}
+.bg-faded-3 {
+    background-color: #585d5f;
+}
+.bg-faded-4 {
+    background-color: #3c3f40;
+}
+.bg-faded-5 {
+    background-color: #292b2c;
+}
+
+#midd{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 55px;
+}
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Image Border
+Applies a light gray border based on class
+all, top, right, bottom, left
+*/
+
+.img-border {
+    border: 1px solid #808080;
+}
+.img-border-t {
+    border-top: 1px solid #808080;
+}
+.img-border-r {
+    border-right: 1px solid #808080;
+}
+.img-border-b {
+    border-bottom: 1px solid #808080;
+}
+.img-border-l {
+    border-left: 1px solid #808080;
+}
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Overlay Background Color
+Helps darken or lighten image that has text on top
+*/
+.overlay,
+.overlay {
+    position: relative;
+}
+.overlay:before,
+.overlay:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.overlay-b-1:before {
+    background: rgba(0, 0, 0, 0.2);
+}
+.overlay-b-2:before {
+    background: rgba(0, 0, 0, 0.4);
+}
+.overlay-b-3:before {
+    background: rgba(0, 0, 0, 0.6);
+}
+.overlay-b-4:before {
+    background: rgba(0, 0, 0, 0.8);
+}
+.overlay-b-5:before {
+    background: rgba(0, 0, 0, 0.9);
+}
+.overlay-w-1:before {
+    background: rgba(255, 255, 255, 0.2);
+}
+.overlay-w-2:before {
+    background: rgba(255, 255, 255, 0.4);
+}
+.overlay-w-3:before {
+    background: rgba(255, 255, 255, 0.6);
+}
+.overlay-w-4:before {
+    background: rgba(255, 255, 255, 0.8);
+}
+.overlay-w-5:before {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/*
+####################################################
+C O M P O N E N T S
+####################################################
+*/
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Navbar
+*/
+.navbar {
+    background-color: #dc5648!important;
+    border-bottom:2px solid #0275d8;
+
+}
+.navbar-brand span {
+    color: #89969e;
+}
+#navbar a {
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Carousel
+*/
+.carousel {
+    background-color: #191919;
+}
+.carousel-caption {
+    top: 10%;
+}
+/* The description text interferes with the indicator nav
+so this hides on narrow mobile
+*/
+.carousel-caption p {
+    display:none;
+}
+@media (min-width: 500px) {
+    .carousel-caption p {
+        display:block;
+    }
+}
+/* centers the carousel image on super wide screens */
+.carousel-item img {
+    margin:0 auto;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Card navigation with right angle character
+http://stackoverflow.com/questions/13233991/combine-after-with-hover
+*/
+
+#meal1 .card{
+    border-radius: 0!important;
+    box-shadow: 5px 5px 15px #e74c3c!important;
+    transition:all 0.3s ease-in!important;
+    -webkit-transition:all 0.3s ease-in!important ;
+    -moz-transition:all 0.3s ease-in!important ;
+}
+#meal:hover {
+    background: #e74c3c!important;
+    color:#fff!important;
+    border-radius: 5px!important;
+    border: none!important;
+    box-shadow:5px 5px 10px #9e9e9e!important;
+}
+#intro{
+    background-color: #dc5648;
+    color:#ffffff;
+}
+.star-rev{
+
+}
+.card .nav-item {
+    position: relative;
+}
+.card .nav-link:hover {
+    text-decoration: underline;
+}
+.card .nav-item:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: .5em 0;
+    line-height: 2rem;
+    color: #0275d8;
+}
+/* image card with dark backgrounds to have white links */
+.card.bg-dark .nav-link,
+.card.bg-dark .nav-item:after {
+    color: #fff;
+}
+/* image card with light backgrounds to have dark links */
+.card.bg-light a {
+    color: inherit;
+}
+
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Quote
+Change background image tall (800 x 800) to wide (1500 x 800) 
+dimensions are increased slightly to account for retina displays
+*/
+
+#quote {
+    background-image: url('../img/quote-800x800.jpg');
+
+}
+#quote p {
+    font-size: 2.5rem;
+}
+@media (min-width: 600px) {
+    #quote {
+        background-image: url('../img/quote-1500x800.jpg');
+    }
+    #quote p {
+        font-size: 3.5rem;
+    }
+}
+
